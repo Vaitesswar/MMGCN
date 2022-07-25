@@ -28,5 +28,25 @@ The code is built with the following libraries:
 - Python 3.6
 - Anaconda
 - PyTorch 1.3
+- EasyDict
 
 ## Data Preparation ##
+The  json skeleton data for NW+UCLA dataset was obtained from the following link and was provided in CTR-GCN's Github page.
+https://github.com/Uason-Chen/CTR-GCN
+
+The skeleton data for NTU RGB+D and NTU RGB+D 120 datasets was obtained by extracting the 3D coordinates from raw .skeleton files obtained
+from NTU ROSE lab.
+https://rose1.ntu.edu.sg/dataset/actionRecognition/
+
+Process the data using the appropriate Python files in data_gen folder for the different datasets.
+
+## Models ##
+The GCN models can be found under "models" folder for each dataset.
+
+## Training ##
+The model architecture has to be modified in line 25 of training.py file in training folder. The parameters of the optimizer, the training
+schedule and path to input data can be adjusted in main.py file. "processor" class will take in the parameters and will start training the 
+model upon initiating "processor.start" command.
+
+## Testing ##
+In main.py, update the "phase" attribute from "train" to "test" and specify the path to weights of the pretrained model in "weights" attribute.
