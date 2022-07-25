@@ -16,8 +16,17 @@ low model complexity thus proving its effectiveness.
 
 ## Architecture ##
 ![Fig 2](https://user-images.githubusercontent.com/81757215/180739256-bbc367d2-c2f4-4cc2-9d60-5c39a0f8ce85.jpg)
-The general architecture of each stream in the four-stream MMGCN model. The three numbers
+Description: The general architecture of each stream in the four-stream MMGCN model. The three numbers
 beside each block represent the number of input channels, the number of output channels and the stride,
 respectively in each convolution layer. GAP, BN and FC represent the global average pooling, batch
 normalization and the fully connected layer respectively. The details of the spatio-temporal (ST) block are
 illustrated at the bottom. τ and 𝑑 denote the kernel size and dilation for the temporal dimension.
+
+## Prerequisites ##
+The code is built with the following libraries:
+
+- Python 3.6
+- Anaconda
+- PyTorch 1.3
+
+## Data Preparation ##
