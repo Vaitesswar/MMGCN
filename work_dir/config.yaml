@@ -1,0 +1,42 @@
+base_lr: 0.1
+batch_size: 32
+device: [0]
+eval_interval: 5
+freeze_graph_until: 10
+ignore_weights: []
+log_interval: 100
+model_saved_name: ./runs/NTU_RGBD_60_mgn
+nesterov: true
+num_epoch: 120
+num_worker: 0
+optimizer: SGD
+phase: train
+print_log: true
+save_interval: 1
+save_score: false
+seed: 1
+show_topk: [1, 5]
+start_epoch: 0
+step: [60, 90]
+test_batch_size: 64
+test_feeder_args: !!python/object/new:easydict.EasyDict
+  dictitems: {bone_data_path: ./data/NTU_RGBD_60/val_data_bone.npy, debug: false,
+    joint_data_path: ./data/NTU_RGBD_60/val_data_joint.npy, joint_motion_data_path: ./data/NTU_RGBD_60/val_data_joint_motion.npy,
+    label_path: ./data/NTU_RGBD_60/val_label.pkl, normalization: false, random_choose: false,
+    random_move: false, random_shift: false, window_size: -1}
+  state: {bone_data_path: ./data/NTU_RGBD_60/val_data_bone.npy, debug: false, joint_data_path: ./data/NTU_RGBD_60/val_data_joint.npy,
+    joint_motion_data_path: ./data/NTU_RGBD_60/val_data_joint_motion.npy, label_path: ./data/NTU_RGBD_60/val_label.pkl,
+    normalization: false, random_choose: false, random_move: false, random_shift: false,
+    window_size: -1}
+train_feeder_args: !!python/object/new:easydict.EasyDict
+  dictitems: {bone_data_path: ./data/NTU_RGBD_60/train_data_bone.npy, debug: false,
+    joint_data_path: ./data/NTU_RGBD_60/train_data_joint.npy, joint_motion_data_path: ./data/NTU_RGBD_60/train_data_joint_motion.npy,
+    label_path: ./data/NTU_RGBD_60/train_label.pkl, normalization: false, random_choose: false,
+    random_move: false, random_shift: false, window_size: -1}
+  state: {bone_data_path: ./data/NTU_RGBD_60/train_data_bone.npy, debug: false, joint_data_path: ./data/NTU_RGBD_60/train_data_joint.npy,
+    joint_motion_data_path: ./data/NTU_RGBD_60/train_data_joint_motion.npy, label_path: ./data/NTU_RGBD_60/train_label.pkl,
+    normalization: false, random_choose: false, random_move: false, random_shift: false,
+    window_size: -1}
+weight_decay: 0.0005
+weights: null
+work_dir: ./work_dir
