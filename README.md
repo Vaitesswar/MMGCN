@@ -13,3 +13,11 @@ appropriate receptive field for each layer, thus allowing the model to dynamical
 lightweight MMGCN model, we further show that deep learning models can learn the underlying patterns in the data and
 model large receptive fields without additional semantics or high model complexity. Finally, this model achieved state-ofthe-art results on three benchmark datasets namely NTU RGB+D, NTU RGB+D 120 and Northwestern-UCLA despite its
 low model complexity thus proving its effectiveness.
+
+## Architecture ##
+![Fig 2](https://user-images.githubusercontent.com/81757215/180739256-bbc367d2-c2f4-4cc2-9d60-5c39a0f8ce85.jpg)
+The general architecture of each stream in the four-stream MMGCN model. The three numbers
+beside each block represent the number of input channels, the number of output channels and the stride,
+respectively in each convolution layer. GAP, BN and FC represent the global average pooling, batch
+normalization and the fully connected layer respectively. The details of the spatio-temporal (ST) block are
+illustrated at the bottom. τ and 𝑑 denote the kernel size and dilation for the temporal dimension.
