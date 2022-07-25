@@ -53,7 +53,7 @@ In main.py, update the "phase" attribute from "train" to "test" and specify the 
 
 ## Citing paper ##
 Please refer to the following link for the full details of this model.
-https://dr.ntu.edu.sg/handle/10356/156866
+- https://dr.ntu.edu.sg/handle/10356/156866
 
 If you find the repository or paper useful, please cite as follows.
-U S Vaitesswar (2022). Skeleton-based human action recognition with graph neural networks. Master's thesis, Nanyang Technological University, Singapore. https://hdl.handle.net/10356/156866
+- U S Vaitesswar (2022). Skeleton-based human action recognition with graph neural networks. Master's thesis, Nanyang Technological University, Singapore. https://hdl.handle.net/10356/156866
