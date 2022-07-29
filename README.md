@@ -44,7 +44,7 @@ Process the data using the appropriate Python files in data_gen folder for the d
 The GCN models can be found under "models" folder for each dataset.
 
 ## Training ##
-Model architecture and feeder have to be modified in lines 25 and 27 of training.py file in training folder respectively. Note that the feeder file varies for NTU and NW-UCLA datasets. The parameters of the optimizer, training schedule and path to input data can be changed in main.py file. "processor" class will take in the parameters and will start training the model upon initiating "processor.start" command in main.py file.
+Prior to training, change lines 25 and 27 of training.py file in training folder to the appropriate model architecture and feeder respectively. Note that the feeder file varies for NTU and NW-UCLA datasets. The parameters of optimizer, training schedule and path to input data can be changed in main.py file. "processor" class will take in the parameters and will start training the model upon initiating "processor.start" command in main.py file.
 
 ## Testing ##
 In main.py, update the "phase" attribute from "train" to "test" and specify the path to weights of the pretrained model in "weights" attribute.
