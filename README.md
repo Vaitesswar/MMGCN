@@ -51,6 +51,9 @@ model upon initiating "processor.start" command.
 ## Testing ##
 In main.py, update the "phase" attribute from "train" to "test" and specify the path to weights of the pretrained model in "weights" attribute.
 
+## Weights and Test Results ##
+The individual model weights and the predicted action labels for the test samples can be found in the "model weights and results" folder.
+
 ## Citing paper ##
 Please refer to the following link for the full details of this model.
 - https://dr.ntu.edu.sg/handle/10356/156866
