@@ -22,9 +22,9 @@ import torch.distributed as dist
 import easydict
 import sys
 sys.path.insert(0, './model')
-from directed_multiple_temp import Model # Change this line to change model architecture
+from directed_multiple_temp import Model # Modify this line to change model architecture
 sys.path.insert(0, './feeders')
-from feeder import Feeder
+from feeder import Feeder  # Modify this line to change feeder
 
 class Processor():
     """Processor for Skeleton-based Action Recgnition"""
