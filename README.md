@@ -38,14 +38,13 @@ The skeleton data for NTU RGB+D and NTU RGB+D 120 datasets was obtained by extra
 from NTU ROSE lab.
 https://rose1.ntu.edu.sg/dataset/actionRecognition/
 
-Process the data using the appropriate Python files in data_gen folder for the different datasets.
+Process the data using the appropriate Python files in data_gen folder for the different datasets. Note that the motion and bone data is preprocessed for NTU datasets. On the other hand, bone and motion data are processed during runtime for NW-UCLA dataset as seen in "feeder_ucla.py" in feeders folder.
 
 ## Models ##
 The GCN models can be found under "models" folder for each dataset.
 
 ## Training ##
-The model architecture has to be modified in line 25 of training.py file in training folder. The parameters of the optimizer, the training
-schedule and path to input data can be adjusted in main.py file. "processor" class will take in the parameters and will start training the 
+The model architecture has to be modified in line 25 of training.py file in training folder. The feeder has to be modified in line 27 of training.py file in training folder. Note that the feeder file varies for NTU and NW-UCLA datasets. The parameters of the optimizer, the training schedule and path to input data can be adjusted in main.py file. "processor" class will take in the parameters and will start training the 
 model upon initiating "processor.start" command.
 
 ## Testing ##
