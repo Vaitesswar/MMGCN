@@ -49,7 +49,7 @@ Prior to training, change lines 25 and 27 of training.py file in training folder
 ## Testing ##
 In main.py, update the "phase" attribute from "train" to "test" and specify the path to weights of the pretrained model in "weights" attribute.
 
-## Weights and Test Results ##
+## Pretrained weights and Test Results ##
 The individual model weights and the predicted action labels for the test samples can be found in the "model weights and results" folder.
 
 ## Citing paper ##
